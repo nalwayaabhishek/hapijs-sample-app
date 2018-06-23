@@ -9,7 +9,6 @@ const logger = require('./server/utils/logger');
 
 exports.deployment = async () => {
   const server = new Hapi.Server({
-    host: 'localhost',
     port: config.get('app.port'),
   });
 
