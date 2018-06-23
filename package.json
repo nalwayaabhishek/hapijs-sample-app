@@ -1,0 +1,32 @@
+{
+  "name": "hapijs-sample-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+      "lint": "eslint *.js server test config bin"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "boom": "^7.2.0",
+    "bunyan": "^1.8.12",
+    "config": "^1.30.0",
+    "glob": "^7.1.2",
+    "good": "^8.1.1",
+    "good-console": "^7.1.0",
+    "good-squeeze": "^5.1.0",
+    "hapi": "^17.5.1",
+    "inert": "^5.1.0",
+    "joi": "^13.4.0",
+    "lodash": "^4.17.10",
+    "vision": "^5.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
+}
