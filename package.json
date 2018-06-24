@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "devstart": "node_modules/nodemon/bin/nodemon.js",
-    "lint": "eslint . server test config bin"
+    "lint": "eslint . server test config bin",
+    "test": "NODE_ENV=test node node_modules/lab/bin/lab -v -L -C -c -t 85",
+    "test-cov-html": "lab -r html -o coverage.html"
   },
   "author": "",
   "license": "ISC",
@@ -27,9 +29,11 @@
     "vision": "^5.3.3"
   },
   "devDependencies": {
+    "code": "^5.2.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.12.0",
+    "lab": "^15.5.0",
     "nodemon": "^1.17.5"
   }
 }
